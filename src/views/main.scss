@@ -1,0 +1,59 @@
+@import '../vars.scss';
+
+.main-content {
+	height: 100%;
+}
+
+.picsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.item {
+	box-sizing: border-box;
+}
+
+.loadingFather {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.loadingText {
+	font-family: 'Arial', sans-serif;
+	margin-top: 15px;
+	animation: infiniteGrowth 0.8s infinite;
+	animation-timing-function: linear;
+}
+
+.spinner {
+	border-radius: 50%;
+	border: solid 2px red;
+	border-top-color: transparent;
+	animation: infiniteSpinning 0.8s infinite;
+	animation-timing-function: linear;
+	width: 20px;
+	height: 20px;
+}
+
+@keyframes infiniteSpinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes infiniteGrowth {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

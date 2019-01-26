@@ -1,0 +1,22 @@
+@import '../../vars.scss';
+
+.thumbnail {
+	width: 150px;
+	height: 150px;
+	flex-shrink: 0;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .3s;
+	cursor: pointer;
+
+	@media (max-width: $screen-sm-min) {
+		width: 100%;
+		height: auto;
+		padding-bottom: 100%;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
