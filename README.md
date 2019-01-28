@@ -7,6 +7,8 @@ Webpack + Vuejs drag and drop (to change the order) fully responsive image galle
 
 `npm run start`
 
+Then, go to your favorite browser and look at `localhost:8010`
+
 ## Explanation
 +Made for Kiu+
 
